@@ -124,7 +124,7 @@ def render():
     y = 162
     region, colour, head, detail, gkey = STORIES[0]
     d.rectangle([24, y, 318, y + 24], fill=colour)
-    d.text((34, y + 4), "LEAD  |  " + region, font=f_tag, fill=PAPER)
+    d.text((34, y + 4), "LEAD | " + region, font=f_tag, fill=PAPER)
     glyph_chip(d, W - 60, y + 2, gkey, colour)
     d.text((24, y + 34), head, font=f_head, fill=INK)
     yy = y + 34 + 44
@@ -152,7 +152,7 @@ def render():
 
     # Footer: the day's date again, so the image names its day even cropped
     d.rectangle([0, H - 44, W, H], fill=INK)
-    foot = "24 NOVEMBER 2026  -  THE DAY THE WORLD MADE HEADLINES"
+    foot = "24 NOVEMBER 2026  |  THE DAY THE WORLD MADE HEADLINES"
     fw = d.textlength(foot, font=f_date)
     d.text(((W - fw) / 2, H - 40), foot, font=f_date, fill=PAPER)
 
